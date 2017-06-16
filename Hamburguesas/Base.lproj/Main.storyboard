@@ -22,75 +22,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paises" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuY-EF-iaO">
-                                <rect key="frame" x="166" y="102" width="80" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Gy3-kM-Xpg"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paises" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-D4-yyx">
+                                <rect key="frame" x="163" y="69" width="49.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAe-wT-p9g">
-                                <rect key="frame" x="92" y="287" width="190" height="30"/>
-                                <color key="backgroundColor" red="0.98626499519999999" green="0.9972204522" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="190" id="H9i-0c-DUh"/>
-                                    <constraint firstAttribute="height" constant="30" id="eLc-FO-92g"/>
-                                </constraints>
-                                <state key="normal" title="Quiero una hamburguesa!"/>
-                                <connections>
-                                    <action selector="mostrarPaisesHamburguesas" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6Q-7A-2TZ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXM-yC-7OZ">
-                                <rect key="frame" x="125" y="151" width="116" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="C2g-Az-C3A"/>
-                                    <constraint firstAttribute="width" constant="120" id="H28-NS-XXy"/>
-                                    <constraint firstAttribute="width" constant="150" id="IyL-2n-dJK"/>
-                                    <constraint firstAttribute="width" constant="116" id="xPF-wu-e8Z"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="C2g-Az-C3A"/>
-                                        <exclude reference="H28-NS-XXy"/>
-                                        <exclude reference="IyL-2n-dJK"/>
-                                    </mask>
-                                </variation>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JT1-RU-1Cn">
+                                <rect key="frame" x="99" y="371" width="177" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMi-HD-okJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                        <state key="normal" title="Quiero una hamburguesa!">
+                                            <color key="titleColor" red="0.98626499519999999" green="0.9972204522" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mostrarPaisesHamburguesas" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeL-qC-a7u"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AHE-Nr-CyN">
+                                <rect key="frame" x="129" y="202" width="116" height="20.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hYQ-uX-6BA">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrn-YD-Y57">
+                                                <rect key="frame" x="0.0" y="0.0" width="116" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.45874649148589808" green="0.77059527844797826" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.45874649150000002" green="0.77059527839999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EXM-yC-7OZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="9RF-Kx-7V0"/>
-                            <constraint firstItem="EXM-yC-7OZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="Arg-W2-Wgb"/>
-                            <constraint firstItem="EXM-yC-7OZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="Axa-ci-6Rz"/>
-                            <constraint firstItem="RAe-wT-p9g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="IQL-lA-5Aq"/>
-                            <constraint firstItem="RAe-wT-p9g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="267" id="aB6-SD-Pby"/>
-                            <constraint firstItem="EXM-yC-7OZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="109" id="c6X-6n-u3c"/>
-                            <constraint firstItem="EXM-yC-7OZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="e2e-so-avc"/>
-                            <constraint firstItem="EXM-yC-7OZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="109" id="k4Z-kt-aoB"/>
-                            <constraint firstItem="zuY-EF-iaO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="kf5-Ds-Gag"/>
-                            <constraint firstItem="zuY-EF-iaO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="u7i-5I-LSQ"/>
-                            <constraint firstItem="zuY-EF-iaO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="xD5-cH-6K0"/>
+                            <constraint firstItem="JT1-RU-1Cn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="351" id="4gT-La-Iu6"/>
+                            <constraint firstItem="JT1-RU-1Cn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Mo-g5-KL9"/>
+                            <constraint firstItem="AHE-Nr-CyN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="182" id="9jR-QN-bV7"/>
+                            <constraint firstItem="Uog-D4-yyx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QuF-3T-Cty"/>
+                            <constraint firstItem="JT1-RU-1Cn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="YQX-S8-LMd"/>
+                            <constraint firstItem="AHE-Nr-CyN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="boU-vL-gsF"/>
+                            <constraint firstItem="Uog-D4-yyx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="d2O-7X-vUB"/>
+                            <constraint firstItem="Uog-D4-yyx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="147" id="l9D-yk-wR4"/>
+                            <constraint firstItem="AHE-Nr-CyN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="113" id="qP2-xO-u3M"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="xD5-cH-6K0"/>
-                                <exclude reference="9RF-Kx-7V0"/>
-                                <exclude reference="Axa-ci-6Rz"/>
-                                <exclude reference="c6X-6n-u3c"/>
-                                <exclude reference="e2e-so-avc"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="hamburguesasDelMundo" destination="EXM-yC-7OZ" id="gsu-Q7-FhB"/>
-                        <outlet property="paisesDelMundo" destination="zuY-EF-iaO" id="6vb-gj-wbm"/>
+                        <outlet property="hamburguesasDelMundo" destination="Vrn-YD-Y57" id="FIV-4A-iQo"/>
+                        <outlet property="paisesDelMundo" destination="Uog-D4-yyx" id="2mS-PB-mEu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
