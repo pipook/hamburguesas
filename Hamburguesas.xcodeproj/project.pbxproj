@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15E5E9C1EF0302900866FAE /* ColoresStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E5E9B1EF0302900866FAE /* ColoresStruct.swift */; };
 		C17C0D3C1EE90206009FAFB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C0D3B1EE90206009FAFB6 /* AppDelegate.swift */; };
 		C17C0D3E1EE90206009FAFB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C0D3D1EE90206009FAFB6 /* ViewController.swift */; };
 		C17C0D411EE90206009FAFB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17C0D3F1EE90206009FAFB6 /* Main.storyboard */; };
 		C17C0D431EE90206009FAFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17C0D421EE90206009FAFB6 /* Assets.xcassets */; };
 		C17C0D461EE90206009FAFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17C0D441EE90206009FAFB6 /* LaunchScreen.storyboard */; };
+		C17C0D4E1EE902C3009FAFB6 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C0D4D1EE902C3009FAFB6 /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C15E5E9B1EF0302900866FAE /* ColoresStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoresStruct.swift; sourceTree = "<group>"; };
 		C17C0D381EE90206009FAFB6 /* Hamburguesas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamburguesas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17C0D3B1EE90206009FAFB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17C0D3D1EE90206009FAFB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C17C0D421EE90206009FAFB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C17C0D451EE90206009FAFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C17C0D471EE90206009FAFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17C0D4D1EE902C3009FAFB6 /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C17C0D421EE90206009FAFB6 /* Assets.xcassets */,
 				C17C0D441EE90206009FAFB6 /* LaunchScreen.storyboard */,
 				C17C0D471EE90206009FAFB6 /* Info.plist */,
+				C17C0D4D1EE902C3009FAFB6 /* Datos.swift */,
+				C15E5E9B1EF0302900866FAE /* ColoresStruct.swift */,
 			);
 			path = Hamburguesas;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				C17C0D3E1EE90206009FAFB6 /* ViewController.swift in Sources */,
 				C17C0D3C1EE90206009FAFB6 /* AppDelegate.swift in Sources */,
+				C15E5E9C1EF0302900866FAE /* ColoresStruct.swift in Sources */,
+				C17C0D4E1EE902C3009FAFB6 /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				C17C0D4C1EE90206009FAFB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
